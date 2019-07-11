@@ -3,7 +3,7 @@ body{
     display: grid;
     grid-template-areas: 'header header header header'
                          'navbar navbar navbar navbar'
-                         'section section aside aside'
+                         'section section section aside'
                          'footer footer footer footer';
     grid-template-rows: 30vh 20vh 60vh 40vh;
     grid-gap: 20px;
@@ -11,26 +11,66 @@ body{
 
 header{
     grid-area: header;
-    background-color: blue;
+    background-color: rgb(255, 0, 179);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+header a{
+    color: black;
+    font-size: 14pt;
 }
 
 nav{
     grid-area: navbar;
     background-color: yellow;
+    display: flex;
+    align-items: center;
+    background-image: url(https://www.papeiseparede.com.br/3000-thickbox_default/papel-de-parede-com-unicornios-coloridos.jpg);
+    background-size: initial;
+
+
+
 }
 
 section{
     grid-area: section;
-    background-color: aqua;
+    background-color:rgb(255, 0, 179);
 }
 
 aside{
     grid-area: aside;
     background-color: purple;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+
 }
+
+aside button{
+    margin-top: 20px;
+}
+
+
+aside input:nth-child(3){
+    margin-top: 10px;
+}
+
 
 footer{
     grid-area: footer;
     background-color: green;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer div{
+    width: 200px;
+    height: 50px;
+    background-color: black;
 
 }
